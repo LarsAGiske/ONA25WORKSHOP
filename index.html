@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOLA City Hall Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🏛️ NOLA City Hall Monitor</h1>
+        <p>Monitoring news from nola.gov for newsworthy changes</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <button id="checkNowBtn" class="primary-btn">🔍 Check for Updates</button>
+            <button id="clearHistoryBtn" class="secondary-btn">🗑️ Clear History</button>
+            <div class="status" id="status">Ready to check for updates</div>
+        </div>
+
+        <div class="automation-controls">
+            <h3>🤖 Automation Settings</h3>
+            <div class="automation-row">
+                <button id="autoCheckBtn" class="primary-btn">▶️ Start Auto Check</button>
+                <select id="intervalSelect" class="interval-select">
+                    <option value="5">Every 5 minutes</option>
+                    <option value="15" selected>Every 15 minutes</option>
+                    <option value="30">Every 30 minutes</option>
+                    <option value="60">Every hour</option>
+                    <option value="180">Every 3 hours</option>
+                    <option value="360">Every 6 hours</option>
+                </select>
+                <div class="auto-status" id="autoStatus">Auto-check disabled</div>
+            </div>
+            <div class="notification-info">
+                <span class="info-icon">ℹ️</span>
+                <span>Browser notifications will alert you to new items. Keep this tab open for auto-checking.</span>
+            </div>
+        </div>
+
+        <div class="filters">
+            <h3>🎯 Keyword Filters</h3>
+            <div class="filter-tags">
+                <span class="filter-tag active" data-keyword="budget">budget</span>
+                <span class="filter-tag active" data-keyword="police">police</span>
+                <span class="filter-tag active" data-keyword="housing">housing</span>
+                <span class="filter-tag active" data-keyword="development">development</span>
+                <span class="filter-tag active" data-keyword="mayor">mayor</span>
+                <span class="filter-tag active" data-keyword="council">council</span>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>📰 Latest News Check</h2>
+            <div id="lastChecked" class="last-checked">Never checked</div>
+            <div id="newsResults" class="news-results">
+                <p class="placeholder">Click "Check for Updates" to start monitoring</p>
+            </div>
+        </div>
+
+        <div class="changes-section">
+            <h2>🔔 Detected Changes</h2>
+            <div id="changesResults" class="changes-results">
+                <p class="placeholder">No changes detected yet</p>
+            </div>
+        </div>
+
+        <div class="history-section">
+            <h2>📊 Check History</h2>
+            <div id="historyResults" class="history-results">
+                <p class="placeholder">No history available</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="monitor.js?v=1.0.1"></script>
+</body>
+</html>
