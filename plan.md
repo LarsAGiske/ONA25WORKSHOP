@@ -237,13 +237,17 @@ If the AI suggests any of these, ask it to find a safer way:
 
 Here's how a good conversation with your AI assistant looks:
 
-**You:** "Build a tool that monitors the mayor's press releases on nola.gov"
+**You:** "Create a plan to build a tool that monitors the mayor's press releases on nola.gov, and save it as blueprint.md. If anything is unclear or you have questions about my needs, stop and ask me questions to clarify my user needs"
 
-**AI:** "I'll build a monitoring tool. Let me start simple..."
+**AI:** "I'll make a plan for the monitoring tool. Let me start simple..."
 
-**You:** "Great. After you build the basic version, show me how to test it."
+**You:** "Great. I'm not sure about feature X and Y, maybe we need something different."
 
-**AI:** [builds code]
+**AI:** "Alright, here's a revised planned taking that into account. Should we build it?"
+
+**You:** "Go ahead. Make sure to test every implementation as you go."
+
+**AI:** [builds code].
 
 **You:** "Now add keyword highlighting for 'budget', 'crime', and 'development'. But test the current version works first."
 
