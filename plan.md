@@ -273,14 +273,3 @@ Participants leave with:
 3. Understanding of incremental development
 4. Security awareness for AI-built tools
 5. Confidence to build more tools
-
-## Materials to Create
-
-1. **workshop-guide.md** - Facilitator's detailed guide
-2. **ai-instructions-card.pdf** - Laminated handout of AI instructions
-3. **security-checklist.md** - Simple security review points
-4. **sample-dialogue.md** - Full example conversations
-5. **troubleshooting-guide.md** - Common issues and fixes
-6. **starter-prompts/** - Directory of tested, working prompts
-
-This plan ensures journalists can safely and effectively direct AI to build real, working tools while maintaining security and quality standards.
